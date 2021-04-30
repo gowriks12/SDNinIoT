@@ -1,0 +1,417 @@
+{
+    "application": {
+        "dpctl": "",
+        "ipBase": "10.0.0.0/8",
+        "netflow": {
+            "nflowAddId": "0",
+            "nflowTarget": "",
+            "nflowTimeout": "600"
+        },
+        "openFlowVersions": {
+            "ovsOf10": "1",
+            "ovsOf11": "0",
+            "ovsOf12": "0",
+            "ovsOf13": "0"
+        },
+        "sflow": {
+            "sflowHeader": "128",
+            "sflowPolling": "30",
+            "sflowSampling": "400",
+            "sflowTarget": ""
+        },
+        "startCLI": "1",
+        "switchType": "ovs",
+        "terminalType": "xterm"
+    },
+    "controllers": [
+        {
+            "opts": {
+                "controllerProtocol": "tcp",
+                "controllerType": "ovsc",
+                "hostname": "controller",
+                "remoteIP": "127.0.0.1",
+                "remotePort": 6633
+            },
+            "x": "457.0",
+            "y": "44.0"
+        }
+    ],
+    "hosts": [
+        {
+            "number": "12",
+            "opts": {
+                "hostname": "door_li",
+                "ip": "10.0.2.2",
+                "nodeNum": 12,
+                "sched": "host"
+            },
+            "x": "379.0",
+            "y": "463.0"
+        },
+        {
+            "number": "10",
+            "opts": {
+                "hostname": "dining_li",
+                "ip": "10.0.1.3",
+                "nodeNum": 10,
+                "sched": "host"
+            },
+            "x": "208.0",
+            "y": "459.0"
+        },
+        {
+            "number": "18",
+            "opts": {
+                "hostname": "garage_sen",
+                "ip": "10.0.4.2",
+                "nodeNum": 18,
+                "sched": "host"
+            },
+            "x": "846.0",
+            "y": "449.0"
+        },
+        {
+            "number": "19",
+            "opts": {
+                "hostname": "door_sen",
+                "ip": "10.0.5.1",
+                "nodeNum": 19,
+                "sched": "host"
+            },
+            "x": "943.0",
+            "y": "447.0"
+        },
+        {
+            "number": "8",
+            "opts": {
+                "hostname": "kit_li",
+                "ip": "10.0.1.1",
+                "nodeNum": 8,
+                "sched": "host"
+            },
+            "x": "41.0",
+            "y": "457.0"
+        },
+        {
+            "number": "16",
+            "opts": {
+                "hostname": "AC",
+                "ip": "10.0.3.3",
+                "nodeNum": 16,
+                "sched": "host"
+            },
+            "x": "681.0",
+            "y": "451.0"
+        },
+        {
+            "number": "9",
+            "opts": {
+                "hostname": "living_li",
+                "ip": "10.0.1.2",
+                "nodeNum": 9,
+                "sched": "host"
+            },
+            "x": "124.0",
+            "y": "458.0"
+        },
+        {
+            "number": "15",
+            "opts": {
+                "hostname": "phone",
+                "ip": "10.0.3.2",
+                "nodeNum": 15,
+                "sched": "host"
+            },
+            "x": "609.0",
+            "y": "454.0"
+        },
+        {
+            "number": "14",
+            "opts": {
+                "hostname": "TV",
+                "ip": "10.0.3.1",
+                "nodeNum": 14,
+                "sched": "host"
+            },
+            "x": "538.0",
+            "y": "456.0"
+        },
+        {
+            "number": "11",
+            "opts": {
+                "hostname": "bath_li",
+                "ip": "10.0.2.1",
+                "nodeNum": 11,
+                "sched": "host"
+            },
+            "x": "298.0",
+            "y": "459.0"
+        },
+        {
+            "number": "13",
+            "opts": {
+                "hostname": "garage_li",
+                "ip": "10.0.2.3",
+                "nodeNum": 13,
+                "sched": "host"
+            },
+            "x": "456.0",
+            "y": "458.0"
+        },
+        {
+            "number": "20",
+            "opts": {
+                "hostname": "bed_sen",
+                "ip": "10.0.5.2",
+                "nodeNum": 20,
+                "sched": "host"
+            },
+            "x": "1043.0",
+            "y": "445.0"
+        },
+        {
+            "number": "17",
+            "opts": {
+                "hostname": "kit_sen",
+                "ip": "10.0.4.1",
+                "nodeNum": 17,
+                "sched": "host"
+            },
+            "x": "758.0",
+            "y": "449.0"
+        }
+    ],
+    "links": [
+        {
+            "dest": "kit_li",
+            "opts": {},
+            "src": "s1"
+        },
+        {
+            "dest": "living_li",
+            "opts": {},
+            "src": "s1"
+        },
+        {
+            "dest": "dining_li",
+            "opts": {},
+            "src": "s1"
+        },
+        {
+            "dest": "bath_li",
+            "opts": {},
+            "src": "s2"
+        },
+        {
+            "dest": "door_li",
+            "opts": {},
+            "src": "s2"
+        },
+        {
+            "dest": "garage_li",
+            "opts": {},
+            "src": "s2"
+        },
+        {
+            "dest": "TV",
+            "opts": {},
+            "src": "s3"
+        },
+        {
+            "dest": "phone",
+            "opts": {},
+            "src": "s3"
+        },
+        {
+            "dest": "AC",
+            "opts": {},
+            "src": "s3"
+        },
+        {
+            "dest": "kit_sen",
+            "opts": {},
+            "src": "s4"
+        },
+        {
+            "dest": "garage_sen",
+            "opts": {},
+            "src": "s4"
+        },
+        {
+            "dest": "door_sen",
+            "opts": {},
+            "src": "s5"
+        },
+        {
+            "dest": "bed_sen",
+            "opts": {},
+            "src": "s5"
+        },
+        {
+            "dest": "s5",
+            "opts": {},
+            "src": "s8"
+        },
+        {
+            "dest": "s6",
+            "opts": {},
+            "src": "s1"
+        },
+        {
+            "dest": "s6",
+            "opts": {},
+            "src": "s2"
+        },
+        {
+            "dest": "s7",
+            "opts": {},
+            "src": "s3"
+        },
+        {
+            "dest": "s8",
+            "opts": {},
+            "src": "s4"
+        },
+        {
+            "dest": "s7",
+            "opts": {},
+            "src": "s6"
+        },
+        {
+            "dest": "s8",
+            "opts": {},
+            "src": "s7"
+        }
+    ],
+    "switches": [
+        {
+            "number": "13",
+            "opts": {
+                "controllers": [
+                    "controller"
+                ],
+                "hostname": "s5",
+                "netflow": "0",
+                "nodeNum": 13,
+                "sflow": "0",
+                "switchIP": "",
+                "switchType": "default"
+            },
+            "x": "922.0",
+            "y": "264.0"
+        },
+        {
+            "number": "9",
+            "opts": {
+                "controllers": [
+                    "controller"
+                ],
+                "hostname": "s1",
+                "netflow": "1",
+                "nodeNum": 9,
+                "sflow": "1",
+                "switchIP": "",
+                "switchType": "default"
+            },
+            "x": "104.0",
+            "y": "278.0"
+        },
+        {
+            "number": "6",
+            "opts": {
+                "controllers": [
+                    "controller"
+                ],
+                "hostname": "s6",
+                "netflow": "1",
+                "nodeNum": 6,
+                "sflow": "1",
+                "switchIP": "",
+                "switchType": "default"
+            },
+            "x": "186.0",
+            "y": "154.0"
+        },
+        {
+            "number": "11",
+            "opts": {
+                "controllers": [
+                    "controller"
+                ],
+                "hostname": "s3",
+                "netflow": "0",
+                "nodeNum": 11,
+                "sflow": "0",
+                "switchIP": "",
+                "switchType": "default"
+            },
+            "x": "513.0",
+            "y": "273.0"
+        },
+        {
+            "number": "8",
+            "opts": {
+                "controllers": [
+                    "controller"
+                ],
+                "hostname": "s8",
+                "netflow": "1",
+                "nodeNum": 8,
+                "sflow": "1",
+                "switchIP": "",
+                "switchType": "default"
+            },
+            "x": "714.0",
+            "y": "144.0"
+        },
+        {
+            "number": "10",
+            "opts": {
+                "controllers": [
+                    "controller"
+                ],
+                "hostname": "s2",
+                "netflow": "0",
+                "nodeNum": 10,
+                "sflow": "0",
+                "switchIP": "",
+                "switchType": "default"
+            },
+            "x": "305.0",
+            "y": "280.0"
+        },
+        {
+            "number": "12",
+            "opts": {
+                "controllers": [
+                    "controller"
+                ],
+                "hostname": "s4",
+                "netflow": "0",
+                "nodeNum": 12,
+                "sflow": "0",
+                "switchIP": "",
+                "switchType": "default"
+            },
+            "x": "729.0",
+            "y": "266.0"
+        },
+        {
+            "number": "7",
+            "opts": {
+                "controllers": [
+                    "controller"
+                ],
+                "hostname": "s7",
+                "netflow": "1",
+                "nodeNum": 7,
+                "sflow": "1",
+                "switchIP": "",
+                "switchType": "default"
+            },
+            "x": "474.0",
+            "y": "147.0"
+        }
+    ],
+    "version": "2"
+}
